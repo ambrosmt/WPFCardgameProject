@@ -93,5 +93,16 @@ namespace CustomCollectionLibrary
                 Push(collection.ElementAt(i));
             }
         }
+
+        public void Shuffle()
+        {
+            Random rng = new Random();
+            var t = ToArray();
+            Clear();
+            foreach(T item in t.Shuffle(rng))
+            {
+                Push(item);
+            }
+        }
     }
 }
