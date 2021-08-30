@@ -23,6 +23,7 @@ namespace WPFCardgameProject
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new MainWindowViewModel(); 
         }
     }
 }
